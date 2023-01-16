@@ -5,11 +5,11 @@ let myObject = {
 
 //EXERCICE 1
 let myElements = [];
-myElements.push(document.querySelector("#object").querySelectorAll("h1,h2"))
+myElements.push(document.querySelectorAll("#object h1,h2"))
 console.log(myElements);
 
 //EXERCICE 2
-let tabProp = Object.entries(myObject);
+let tabProp = Object.getOwnPropertyNames(myObject);
 console.log(tabProp);
 
 //EXERCICE 3
@@ -23,6 +23,14 @@ tabProp = Object.values(myObject);
 console.log(tabProp);
 
 //EXERCICE 5
-
-
+let count = 0;
+tabProp.forEach(element => {
+    console.log(element);
+    count++;
+});
+console.log(count);
 //EXERCICE 6
+
+for (i = 0; i < count; i++){
+    console.log(tabProp);
+}
