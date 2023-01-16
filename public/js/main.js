@@ -23,9 +23,6 @@ tabProp = Object.values(myObject);
 console.log(tabProp);
 
 //EXERCICE 5
-let j;
-for (j = 0; j< tabProp.length; j++){
-    console.log(tabProp[j]);
-}
+
 
 //EXERCICE 6
